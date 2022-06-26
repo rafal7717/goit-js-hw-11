@@ -6,8 +6,9 @@
   justify-content: center;
   width: 100vw;
   padding: 8px 0;
-  background-color: darkslateblue;
+  background-color: darkblue;
 
+  
   &--wrapper {
     display: flex;
     width: 400px;
@@ -24,21 +25,30 @@
     outline: none;
   }
 
-  &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: none;
-    border-radius: 0 4px 4px 0;
-    background-color: #dddddd;
-  }
 }
 
-.search-icon {
-  width: 15px;
-  height: 15px;
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #dddddd;
+  cursor: pointer;
 }
+
+.search-btn:hover
+{
+  background-color: #3e8e41
+}
+
+.search-btn:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+
 
 .gallery {
   display: flex;
@@ -97,6 +107,15 @@
   border-radius: 5px;
   text-transform: uppercase;
   color: white;
-  background-color: darkslateblue;
+  background-color: darkblue;
   cursor: pointer;
+}
+
+.load-more:hover {
+  background-color: #3e8e41
+}
+
+.load-more:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
 }
